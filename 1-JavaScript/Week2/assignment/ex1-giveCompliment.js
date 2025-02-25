@@ -34,7 +34,7 @@ export function giveCompliment(name) {
        const randomIndex = Math.floor (Math.random() * compliments.length);
        const compliment = compliments[randomIndex];
 
-       return `you are ${compliment},${name}!` ;
+       return `You are ${compliment}, ${name}!` ;
 
 
 }
@@ -42,7 +42,7 @@ export function giveCompliment(name) {
 
 
 function main() {
-  // TODO substitute your own name for "HackYourFuture"
+  
   const myName = 'HackYourFuture';
 
   console.log(giveCompliment(myName));
