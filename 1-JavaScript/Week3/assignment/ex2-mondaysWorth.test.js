@@ -9,6 +9,7 @@ Full description atL https://github.com/HackYourFuture/Assignments/tree/main/1-J
 - Make sure the program can be used on any array of objects that contain a
   `duration` property with a number value.
 ------------------------------------------------------------------------------*/
+
 const mondayTasks = [
   {
     name: 'Daily standup',
@@ -30,8 +31,13 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function computeEarnings(task, hourlyRate) {
+const earnings=task 
+.map(task=>(task.duration /60)* hourlyRate)
+.reduce ((total,current)=> total + current,0);
+return `€${earnings.toFixed(2)}`;
+
+
 }
 
 // ! Unit tests (using Jest)
